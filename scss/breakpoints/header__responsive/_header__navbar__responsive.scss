@@ -1,0 +1,49 @@
+@import "../../colors";
+nav {
+    padding: 0.5rem 1.5rem;
+    height: auto;
+    top: 2.625rem;
+    a {
+        .logo {
+            width: 100px;
+        }
+    }
+    ul {
+        display: none;
+    }
+    .show-nav {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        left: 0;
+        top: 4rem;
+        padding: 1rem;
+        margin-top: -13px;
+        &::before {
+            content: "";
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            height: 90vh;
+            background-color: $color-skin-soft;
+        }
+        li {
+            padding: 1rem;
+        }
+        .nav__dropdown__box {
+            position: relative;
+            padding: 1rem 0;
+            top: 15px;
+        }
+    }
+    .burger {
+        display: block;
+        div:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

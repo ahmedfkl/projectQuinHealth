@@ -1,0 +1,29 @@
+@import "colors";
+@import "utilities";
+.section__small {
+    .section__small__content-image {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        img {
+            width: 25%;
+        }
+    }
+    .section__small__application-store {
+        padding: 0.5rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        .section__small__application-store__links {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 3.75rem;
+        }
+    }
+}

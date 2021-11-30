@@ -1,0 +1,13 @@
+@import "section__large";
+@import "section__small";
+@import "section__between__smoke";
+@import "section__large__bg__number";
+@import "section__small__right-image";
+@import "section__news";
+@import "section__subs-forms";
+@import "forms";
+.section__general-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}

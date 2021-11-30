@@ -1,0 +1,1826 @@
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:ital,wght@1,300&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:ital,wght@1,300&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:ital,wght@1,300&family=Roboto&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+* img {
+  width: 100%;
+}
+
+* ul {
+  list-style: none;
+}
+
+.show {
+  opacity: 1 !important;
+  display: block !important;
+}
+
+.hide {
+  opacity: 0 !important;
+  display: none !important;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  height: 6rem;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.sticky .logo {
+  width: 6.25rem !important;
+}
+
+.sticky .show-nav {
+  margin-top: 15px;
+}
+
+.person-tag {
+  text-transform: uppercase;
+  color: #8788a0;
+  margin-left: 1.1rem;
+  display: inline;
+  margin-right: 1rem;
+  position: relative;
+  font-size: 0.75rem;
+}
+
+.person-tag::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -15px;
+  top: 3px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.person-tag-patient::before {
+  background-color: #37385c;
+}
+
+.person-tag-doctor::before {
+  background-color: #a0cecf;
+}
+
+.person-tag-specialist::before {
+  background-color: #f2d6c1;
+}
+
+.title-1 {
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+}
+
+.title-4 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.title-6 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.title-7 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.5;
+  text-align: left;
+}
+
+#header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  position: relative;
+  height: 2.625rem;
+  opacity: 1;
+  padding: .5rem 18rem;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+
+#header__top > a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1rem;
+}
+
+#header__top #header__top__general__pract {
+  font-size: 0.80rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#header__top #header__top__general__pract i {
+  margin-left: 0.5rem;
+}
+
+#header__top #language {
+  margin-left: 2.81rem;
+  z-index: 102;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+}
+
+#header__top #language i {
+  margin-left: .25rem;
+}
+
+#header__top #language:hover ~ .language__dropdown {
+  display: block !important;
+  opacity: 1 !important;
+  transition: all 3s ease-out;
+  -webkit-transition: all 3s ease-out;
+  -moz-transition: all 3s ease-out;
+  -ms-transition: all 3s ease-out;
+  -o-transition: all 3s ease-out;
+}
+
+#header__top .language__dropdown {
+  position: absolute;
+  text-align: left;
+  padding: 2rem 1.5rem 0.5rem 0.3rem;
+  top: 5px;
+  right: 18.75rem;
+  -webkit-box-shadow: 0px 10px 20px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 20px 4px rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: none;
+  z-index: 101;
+  opacity: 0;
+  transition: all 3s ease-out;
+  -webkit-transition: all 3s ease-out;
+  -moz-transition: all 3s ease-out;
+  -ms-transition: all 3s ease-out;
+  -o-transition: all 3s ease-out;
+}
+
+#header__top .language__dropdown:hover {
+  opacity: 1;
+  display: block;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 7.75rem;
+  top: 2.625rem;
+  position: fixed;
+  padding: 0.75rem 18rem;
+  width: 100%;
+  z-index: 100;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+nav > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .burger {
+  display: none;
+  cursor: pointer;
+  z-index: 99;
+}
+
+nav .burger .line-1 {
+  height: 2px;
+  width: 25px;
+  background-color: #37385c;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+nav .burger .line-2 {
+  opacity: 1;
+  height: 2px;
+  width: 25px;
+  background-color: #37385c;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+nav .burger .line-3 {
+  height: 2px;
+  width: 25px;
+  background-color: #37385c;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+nav a .logo {
+  width: 9.375rem;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 60%;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li .nav__dropdown__box {
+  background-color: #fff;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 140%;
+  padding: 1rem 0 0.5rem 0;
+  display: none;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+
+nav ul li i {
+  margin-left: .5rem;
+}
+
+nav ul .is-dropdown:hover .nav__dropdown__box {
+  display: block;
+  opacity: 1;
+}
+
+.btn-main {
+  color: #37385c;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+}
+
+.btn-main:hover {
+  color: #008080;
+}
+
+.btn-main-arrow:hover i {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+.btn-content {
+  background-color: #b6e4e4;
+  padding: 1rem 2rem;
+  font-weight: 500;
+  border-radius: 62.5rem;
+  -webkit-border-radius: 62.5rem;
+  -moz-border-radius: 62.5rem;
+  -ms-border-radius: 62.5rem;
+  -o-border-radius: 62.5rem;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.btn-content:visited, .btn-content:active {
+  color: #37385c;
+}
+
+.btn-content:hover {
+  border: 2px solid #b5b5b5;
+}
+
+.btn-content:focus-visible {
+  outline: 2px solid red;
+}
+
+.btn-content:focus {
+  outline: #3273DC;
+}
+
+.btn-content i {
+  margin-left: 1rem;
+}
+
+.btn-content-light {
+  background-color: #f3e6e4;
+  padding: 1rem 2rem;
+  font-weight: 500;
+  border-radius: 62.5rem;
+  -webkit-border-radius: 62.5rem;
+  -moz-border-radius: 62.5rem;
+  -ms-border-radius: 62.5rem;
+  -o-border-radius: 62.5rem;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.btn-content-light:visited, .btn-content-light:active {
+  color: #37385c;
+}
+
+.btn-content-light:hover {
+  border: 2px solid #b5b5b5;
+}
+
+.btn-content-light:focus-visible {
+  outline: 2px solid red;
+}
+
+.btn-content-light:focus {
+  outline: #3273DC;
+}
+
+.btn-content-light i {
+  margin-left: 1rem;
+}
+
+.section__large {
+  padding-top: 10rem;
+  place-items: center;
+}
+
+.section__large img {
+  width: 70%;
+  margin-left: auto;
+}
+
+.show {
+  opacity: 1 !important;
+  display: block !important;
+}
+
+.hide {
+  opacity: 0 !important;
+  display: none !important;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  height: 6rem;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.sticky .logo {
+  width: 6.25rem !important;
+}
+
+.sticky .show-nav {
+  margin-top: 15px;
+}
+
+.person-tag {
+  text-transform: uppercase;
+  color: #8788a0;
+  margin-left: 1.1rem;
+  display: inline;
+  margin-right: 1rem;
+  position: relative;
+  font-size: 0.75rem;
+}
+
+.person-tag::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -15px;
+  top: 3px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.person-tag-patient::before {
+  background-color: #37385c;
+}
+
+.person-tag-doctor::before {
+  background-color: #a0cecf;
+}
+
+.person-tag-specialist::before {
+  background-color: #f2d6c1;
+}
+
+.title-1 {
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+}
+
+.title-4 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.title-6 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.title-7 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.5;
+  text-align: left;
+}
+
+.section__small .section__small__content-image {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+
+.section__small .section__small__content-image img {
+  width: 25%;
+}
+
+.section__small .section__small__application-store {
+  padding: 0.5rem;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+.section__small .section__small__application-store .section__small__application-store__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3.75rem;
+}
+
+.show {
+  opacity: 1 !important;
+  display: block !important;
+}
+
+.hide {
+  opacity: 0 !important;
+  display: none !important;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  height: 6rem;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.sticky .logo {
+  width: 6.25rem !important;
+}
+
+.sticky .show-nav {
+  margin-top: 15px;
+}
+
+.person-tag {
+  text-transform: uppercase;
+  color: #8788a0;
+  margin-left: 1.1rem;
+  display: inline;
+  margin-right: 1rem;
+  position: relative;
+  font-size: 0.75rem;
+}
+
+.person-tag::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -15px;
+  top: 3px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.person-tag-patient::before {
+  background-color: #37385c;
+}
+
+.person-tag-doctor::before {
+  background-color: #a0cecf;
+}
+
+.person-tag-specialist::before {
+  background-color: #f2d6c1;
+}
+
+.title-1 {
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+}
+
+.title-4 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.title-6 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.title-7 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.5;
+  text-align: left;
+}
+
+.section__between__smoke {
+  height: 9rem;
+  display: block !important;
+}
+
+.section__between__smoke .desktop-smoke {
+  display: block;
+}
+
+.section__between__smoke .mobile-smoke {
+  display: none;
+}
+
+.show {
+  opacity: 1 !important;
+  display: block !important;
+}
+
+.hide {
+  opacity: 0 !important;
+  display: none !important;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  height: 6rem;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.sticky .logo {
+  width: 6.25rem !important;
+}
+
+.sticky .show-nav {
+  margin-top: 15px;
+}
+
+.person-tag {
+  text-transform: uppercase;
+  color: #8788a0;
+  margin-left: 1.1rem;
+  display: inline;
+  margin-right: 1rem;
+  position: relative;
+  font-size: 0.75rem;
+}
+
+.person-tag::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -15px;
+  top: 3px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.person-tag-patient::before {
+  background-color: #37385c;
+}
+
+.person-tag-doctor::before {
+  background-color: #a0cecf;
+}
+
+.person-tag-specialist::before {
+  background-color: #f2d6c1;
+}
+
+.title-1 {
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+}
+
+.title-4 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.title-6 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.title-7 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.5;
+  text-align: left;
+}
+
+.section__large__bg__number .section__large__bg__number__image {
+  width: 70%;
+  position: relative;
+}
+
+.section__large__bg__number .section__large__bg__number__image::after {
+  counter-increment: section-number;
+  content: "0" counter(section-number);
+  position: absolute;
+  z-index: -1;
+  font-size: 8rem;
+  color: #bee3e4;
+  top: -3.5rem;
+  left: 0;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 900;
+}
+
+.bg__number__for__big__image .section__large__bg__number__image::after {
+  left: -5rem;
+}
+
+.bg__number__right .section__large__bg__number__image::after {
+  left: 30rem;
+}
+
+.bg__number__left .section__large__bg__number__image::after {
+  left: -10rem;
+}
+
+.show {
+  opacity: 1 !important;
+  display: block !important;
+}
+
+.hide {
+  opacity: 0 !important;
+  display: none !important;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  height: 6rem;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.sticky .logo {
+  width: 6.25rem !important;
+}
+
+.sticky .show-nav {
+  margin-top: 15px;
+}
+
+.person-tag {
+  text-transform: uppercase;
+  color: #8788a0;
+  margin-left: 1.1rem;
+  display: inline;
+  margin-right: 1rem;
+  position: relative;
+  font-size: 0.75rem;
+}
+
+.person-tag::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -15px;
+  top: 3px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.person-tag-patient::before {
+  background-color: #37385c;
+}
+
+.person-tag-doctor::before {
+  background-color: #a0cecf;
+}
+
+.person-tag-specialist::before {
+  background-color: #f2d6c1;
+}
+
+.title-1 {
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+}
+
+.title-4 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.title-6 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.title-7 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.5;
+  text-align: left;
+}
+
+.section__small__right-image .section__small__right-image__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.section__small__right-image .section__small__right-image__container .section__small__right-image__img {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+
+.section__small__right-image .section__small__right-image__container .section__small__right-image__img img {
+  width: 25%;
+}
+
+.show {
+  opacity: 1 !important;
+  display: block !important;
+}
+
+.hide {
+  opacity: 0 !important;
+  display: none !important;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  height: 6rem;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.sticky .logo {
+  width: 6.25rem !important;
+}
+
+.sticky .show-nav {
+  margin-top: 15px;
+}
+
+.person-tag {
+  text-transform: uppercase;
+  color: #8788a0;
+  margin-left: 1.1rem;
+  display: inline;
+  margin-right: 1rem;
+  position: relative;
+  font-size: 0.75rem;
+}
+
+.person-tag::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -15px;
+  top: 3px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.person-tag-patient::before {
+  background-color: #37385c;
+}
+
+.person-tag-doctor::before {
+  background-color: #a0cecf;
+}
+
+.person-tag-specialist::before {
+  background-color: #f2d6c1;
+}
+
+.title-1 {
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+}
+
+.title-4 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.title-6 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.title-7 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.5;
+  text-align: left;
+}
+
+.news {
+  margin: 6rem 0;
+  height: 35rem;
+}
+
+.news .news__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  height: 100%;
+}
+
+.news .news__wrapper .news__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 1.375rem;
+  -webkit-border-radius: 1.375rem;
+  -moz-border-radius: 1.375rem;
+  -ms-border-radius: 1.375rem;
+  -o-border-radius: 1.375rem;
+}
+
+.news .news__wrapper .news__card img {
+  border-radius: 8px 8px 0 0;
+  -webkit-border-radius: 8px 8px 0 0;
+  -moz-border-radius: 8px 8px 0 0;
+  -ms-border-radius: 8px 8px 0 0;
+  -o-border-radius: 8px 8px 0 0;
+}
+
+.news .news__wrapper .news__card .news__card__container {
+  padding: 1rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.news .news__wrapper .news__card .news__card__container a {
+  margin-top: auto;
+}
+
+.news .news__wrapper .news__card .news__card__container a i {
+  margin-left: 0.5rem;
+}
+
+.show {
+  opacity: 1 !important;
+  display: block !important;
+}
+
+.hide {
+  opacity: 0 !important;
+  display: none !important;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  height: 6rem;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.sticky .logo {
+  width: 6.25rem !important;
+}
+
+.sticky .show-nav {
+  margin-top: 15px;
+}
+
+.person-tag {
+  text-transform: uppercase;
+  color: #8788a0;
+  margin-left: 1.1rem;
+  display: inline;
+  margin-right: 1rem;
+  position: relative;
+  font-size: 0.75rem;
+}
+
+.person-tag::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -15px;
+  top: 3px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.person-tag-patient::before {
+  background-color: #37385c;
+}
+
+.person-tag-doctor::before {
+  background-color: #a0cecf;
+}
+
+.person-tag-specialist::before {
+  background-color: #f2d6c1;
+}
+
+.title-1 {
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+}
+
+.title-4 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.title-6 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.title-7 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.5;
+  text-align: left;
+}
+
+.subs-forms .subs-forms__container {
+  background-color: #bee3e4;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  padding: 2rem;
+  border-radius: 1.375rem;
+  -webkit-border-radius: 1.375rem;
+  -moz-border-radius: 1.375rem;
+  -ms-border-radius: 1.375rem;
+  -o-border-radius: 1.375rem;
+}
+
+.subs-forms .subs-forms__container .subs-forms__container__left img {
+  width: 65%;
+}
+
+.subs-forms .subs-forms__container .subs-forms__container__right .title-1 {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+.subs-forms .subs-forms__container .subs-forms__container__right form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.subs-forms .subs-forms__container .subs-forms__container__right form input {
+  margin-bottom: 1rem;
+}
+
+.show {
+  opacity: 1 !important;
+  display: block !important;
+}
+
+.hide {
+  opacity: 0 !important;
+  display: none !important;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  height: 6rem;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.sticky .logo {
+  width: 6.25rem !important;
+}
+
+.sticky .show-nav {
+  margin-top: 15px;
+}
+
+.person-tag {
+  text-transform: uppercase;
+  color: #8788a0;
+  margin-left: 1.1rem;
+  display: inline;
+  margin-right: 1rem;
+  position: relative;
+  font-size: 0.75rem;
+}
+
+.person-tag::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -15px;
+  top: 3px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.person-tag-patient::before {
+  background-color: #37385c;
+}
+
+.person-tag-doctor::before {
+  background-color: #a0cecf;
+}
+
+.person-tag-specialist::before {
+  background-color: #f2d6c1;
+}
+
+.title-1 {
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+}
+
+.title-4 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.title-6 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.title-7 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.5;
+  text-align: left;
+}
+
+form {
+  margin-bottom: 1rem;
+}
+
+form input {
+  height: 3rem;
+  border: none;
+}
+
+form input:hover {
+  border: 1px solid #b5b5b5;
+}
+
+form p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+form p input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background-color: transparent;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 2rem;
+  height: 2rem;
+  border: 0.15rem solid currentColor;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  transform: translateY(-0.075em);
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  -webkit-transform: translateY(-0.075em);
+  -moz-transform: translateY(-0.075em);
+  -ms-transform: translateY(-0.075em);
+  -o-transform: translateY(-0.075em);
+}
+
+form p input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  top: 0.3rem;
+  left: 0.3rem;
+  right: 0.3rem;
+  bottom: 0.3rem;
+  width: 17.619px;
+  height: 17.619px;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  -webkit-transition: 120ms -webkit-transform ease-in-out;
+  transition: 120ms -webkit-transform ease-in-out;
+  transition: 120ms transform ease-in-out;
+  transition: 120ms transform ease-in-out, 120ms -webkit-transform ease-in-out;
+  -webkit-transition: 120ms transform ease-in-out;
+  -moz-transition: 120ms transform ease-in-out;
+  -ms-transition: 120ms transform ease-in-out;
+  -o-transition: 120ms transform ease-in-out;
+  -webkit-box-shadow: inset 1em 1em #37385c;
+          box-shadow: inset 1em 1em #37385c;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+form p input[type="checkbox"]:checked::before {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+
+.section__general-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+
+.show {
+  opacity: 1 !important;
+  display: block !important;
+}
+
+.hide {
+  opacity: 0 !important;
+  display: none !important;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  height: 6rem;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.sticky .logo {
+  width: 6.25rem !important;
+}
+
+.sticky .show-nav {
+  margin-top: 15px;
+}
+
+.person-tag {
+  text-transform: uppercase;
+  color: #8788a0;
+  margin-left: 1.1rem;
+  display: inline;
+  margin-right: 1rem;
+  position: relative;
+  font-size: 0.75rem;
+}
+
+.person-tag::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -15px;
+  top: 3px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.person-tag-patient::before {
+  background-color: #37385c;
+}
+
+.person-tag-doctor::before {
+  background-color: #a0cecf;
+}
+
+.person-tag-specialist::before {
+  background-color: #f2d6c1;
+}
+
+.title-1 {
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+}
+
+.title-4 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.title-6 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.title-7 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.5;
+  text-align: left;
+}
+
+.app-card .app-card__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  place-items: center;
+  padding: 2.5rem 6.25rem;
+  background-color: #f0e6e4;
+  border-radius: 1.375rem;
+  -webkit-border-radius: 1.375rem;
+  -moz-border-radius: 1.375rem;
+  -ms-border-radius: 1.375rem;
+  -o-border-radius: 1.375rem;
+}
+
+.show {
+  opacity: 1 !important;
+  display: block !important;
+}
+
+.hide {
+  opacity: 0 !important;
+  display: none !important;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  height: 6rem;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.sticky .logo {
+  width: 6.25rem !important;
+}
+
+.sticky .show-nav {
+  margin-top: 15px;
+}
+
+.person-tag {
+  text-transform: uppercase;
+  color: #8788a0;
+  margin-left: 1.1rem;
+  display: inline;
+  margin-right: 1rem;
+  position: relative;
+  font-size: 0.75rem;
+}
+
+.person-tag::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -15px;
+  top: 3px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.person-tag-patient::before {
+  background-color: #37385c;
+}
+
+.person-tag-doctor::before {
+  background-color: #a0cecf;
+}
+
+.person-tag-specialist::before {
+  background-color: #f2d6c1;
+}
+
+.title-1 {
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+}
+
+.title-4 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.title-6 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.title-7 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.5;
+  text-align: left;
+}
+
+form {
+  margin-bottom: 1rem;
+}
+
+form input {
+  height: 3rem;
+  border: none;
+}
+
+form input:hover {
+  border: 1px solid #b5b5b5;
+}
+
+form p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+form p input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background-color: transparent;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 2rem;
+  height: 2rem;
+  border: 0.15rem solid currentColor;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  transform: translateY(-0.075em);
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  -webkit-transform: translateY(-0.075em);
+  -moz-transform: translateY(-0.075em);
+  -ms-transform: translateY(-0.075em);
+  -o-transform: translateY(-0.075em);
+}
+
+form p input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  top: 0.3rem;
+  left: 0.3rem;
+  right: 0.3rem;
+  bottom: 0.3rem;
+  width: 17.619px;
+  height: 17.619px;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  -webkit-transition: 120ms -webkit-transform ease-in-out;
+  transition: 120ms -webkit-transform ease-in-out;
+  transition: 120ms transform ease-in-out;
+  transition: 120ms transform ease-in-out, 120ms -webkit-transform ease-in-out;
+  -webkit-transition: 120ms transform ease-in-out;
+  -moz-transition: 120ms transform ease-in-out;
+  -ms-transition: 120ms transform ease-in-out;
+  -o-transition: 120ms transform ease-in-out;
+  -webkit-box-shadow: inset 1em 1em #37385c;
+          box-shadow: inset 1em 1em #37385c;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+form p input[type="checkbox"]:checked::before {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+
+.show {
+  opacity: 1 !important;
+  display: block !important;
+}
+
+.hide {
+  opacity: 0 !important;
+  display: none !important;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  height: 6rem;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.sticky .logo {
+  width: 6.25rem !important;
+}
+
+.sticky .show-nav {
+  margin-top: 15px;
+}
+
+.person-tag {
+  text-transform: uppercase;
+  color: #8788a0;
+  margin-left: 1.1rem;
+  display: inline;
+  margin-right: 1rem;
+  position: relative;
+  font-size: 0.75rem;
+}
+
+.person-tag::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -15px;
+  top: 3px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.person-tag-patient::before {
+  background-color: #37385c;
+}
+
+.person-tag-doctor::before {
+  background-color: #a0cecf;
+}
+
+.person-tag-specialist::before {
+  background-color: #f2d6c1;
+}
+
+.title-1 {
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+}
+
+.title-4 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.title-6 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.title-7 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.5;
+  text-align: left;
+}
+
+footer {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fcfafa), to(#e2e2e7));
+  background: linear-gradient(180deg, #fcfafa 0, #e2e2e7 100%);
+  padding-top: 8rem !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer__main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  padding: 0 18rem;
+  margin-bottom: 10rem;
+}
+
+footer .footer__main .footer__main__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+footer .footer__main .footer__main__column .social-media {
+  font-size: 1.5rem;
+}
+
+footer .footer__main .footer__main__column .social-media a {
+  color: #8788a0;
+  transition: color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+}
+
+footer .footer__main .footer__main__column .social-media a:hover {
+  color: #37385c;
+}
+
+footer .footer__main .footer__main__column img {
+  width: 50%;
+}
+
+footer .footer__main .footer__main__column ul li {
+  margin-bottom: 0.1rem;
+}
+
+footer .copyright {
+  padding: 1rem 18rem;
+  text-align: right;
+  width: 100%;
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Gentium Book Basic', serif;
+  line-height: 1;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  color: #37385c;
+  line-height: 1.5;
+  counter-reset: section-number;
+}
+
+section {
+  padding: 0 18rem;
+}
+
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */

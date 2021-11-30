@@ -1,0 +1,56 @@
+@import "breakpoints";
+@media screen and (max-width: $phone) {
+    .title-1 {
+        font-size: 2.5rem;
+    }
+    .title-4 {
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+    .title-6 {
+        font-size: 1.375rem;
+    }
+    .person-tag {
+        font-size: 1rem;
+        &::before {
+            top: 5px;
+        }
+    }
+    .sticky {
+        height: 4rem;
+        .logo {
+            width: 3.75rem !important;
+        }
+        .show-nav {
+            margin-top: -20px;
+            &::before {
+                height: 95vh;
+            }
+        }
+    }
+    .burger-effect {
+        position: relative;
+        .line-2 {
+            opacity: 0 !important;
+        }
+        .line-1 {
+            position: absolute;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+        }
+        .line-3 {
+            top: 0;
+            left: -1px;
+            position: absolute;
+            margin-bottom: 5px;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+        }
+    }
+}

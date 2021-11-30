@@ -1,0 +1,10 @@
+#header__top {
+    justify-content: space-between;
+    padding: 0.5rem 1.5rem;
+    &>a {
+        padding: 0;
+    }
+    .language__dropdown {
+        right: 1rem;
+    }
+}

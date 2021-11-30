@@ -1,0 +1,95 @@
+@import "colors";
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:ital,wght@1,300&family=Roboto&display=swap');
+.btn-main {
+    color: $color-main-text;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    &:hover {
+        color: $color-primary;
+    }
+}
+
+.btn-main-arrow {
+    &:hover {
+        i {
+            transition: all .2s ease-in-out;
+            -webkit-transition: all .2s ease-in-out;
+            -moz-transition: all .2s ease-in-out;
+            -ms-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+        }
+    }
+}
+
+.btn-content {
+    background-color: $color-turkuaz;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    border-radius: 62.5rem;
+    -webkit-border-radius: 62.5rem;
+    -moz-border-radius: 62.5rem;
+    -ms-border-radius: 62.5rem;
+    -o-border-radius: 62.5rem;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    &:visited,
+    &:active {
+        color: $color-main-text;
+    }
+    &:hover {
+        border: 2px solid $color-outline-grey;
+    }
+    &:focus-visible {
+        outline: 2px solid red;
+    }
+    &:focus {
+        outline: $color-blue;
+    }
+    i {
+        margin-left: 1rem;
+    }
+}
+
+.btn-content-light {
+    background-color: $color-btn-light-bg;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    border-radius: 62.5rem;
+    -webkit-border-radius: 62.5rem;
+    -moz-border-radius: 62.5rem;
+    -ms-border-radius: 62.5rem;
+    -o-border-radius: 62.5rem;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    &:visited,
+    &:active {
+        color: $color-main-text;
+    }
+    &:hover {
+        border: 2px solid $color-outline-grey;
+    }
+    &:focus-visible {
+        outline: 2px solid red;
+    }
+    &:focus {
+        outline: $color-blue;
+    }
+    i {
+        margin-left: 1rem;
+    }
+}

@@ -1,0 +1,271 @@
+@media screen and (max-width: 601px) and (max-width: 601px) {
+  .title-1 {
+    font-size: 2.5rem;
+  }
+  .title-4 {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  .title-6 {
+    font-size: 1.375rem;
+  }
+  .person-tag {
+    font-size: 1rem;
+  }
+  .person-tag::before {
+    top: 5px;
+  }
+  .sticky {
+    height: 4rem;
+  }
+  .sticky .logo {
+    width: 3.75rem !important;
+  }
+  .sticky .show-nav {
+    margin-top: -20px;
+  }
+  .sticky .show-nav::before {
+    height: 95vh;
+  }
+  .burger-effect {
+    position: relative;
+  }
+  .burger-effect .line-2 {
+    opacity: 0 !important;
+  }
+  .burger-effect .line-1 {
+    position: absolute;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+  }
+  .burger-effect .line-3 {
+    top: 0;
+    left: -1px;
+    position: absolute;
+    margin-bottom: 5px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+  }
+}
+
+@media screen and (max-width: 601px) {
+  #header__top {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0.5rem 1.5rem;
+  }
+  #header__top > a {
+    padding: 0;
+  }
+  #header__top .language__dropdown {
+    right: 1rem;
+  }
+  nav {
+    padding: 0.5rem 1.5rem;
+    height: auto;
+    top: 2.625rem;
+  }
+  nav a .logo {
+    width: 100px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .show-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    left: 0;
+    top: 4rem;
+    padding: 1rem;
+    margin-top: -13px;
+  }
+  nav .show-nav::before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    background-color: #f0e6e4;
+  }
+  nav .show-nav li {
+    padding: 1rem;
+  }
+  nav .show-nav .nav__dropdown__box {
+    position: relative;
+    padding: 1rem 0;
+    top: 15px;
+  }
+  nav .burger {
+    display: block;
+  }
+  nav .burger div:last-child {
+    margin-bottom: 0;
+  }
+  .section__large {
+    padding-top: 1rem;
+    position: relative;
+  }
+  .section__large img {
+    position: absolute;
+    margin-left: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    top: 10rem;
+  }
+  .section__large .section__large__content {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .section__large .section__large__content .title-1 {
+    margin-bottom: 18rem;
+  }
+  .section__small__content-image {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section__small__content-image img {
+    width: 50% !important;
+  }
+  .section__small__application-store__links {
+    gap: 1rem !important;
+  }
+  .section__between__smoke .desktop-smoke {
+    display: none;
+  }
+  .section__between__smoke .mobile-smoke {
+    display: block;
+  }
+  .section__large__bg__number__image {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .section__large__bg__number__image::after {
+    left: -3rem !important;
+    font-size: 6rem !important;
+  }
+  .section__large__bg__number__content {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .section__small__right-image .section__small__right-image__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section__small__right-image .section__small__right-image__container .section__small__right-image__img {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section__small__right-image .section__small__right-image__container .section__small__right-image__img img {
+    width: 50%;
+  }
+  .news {
+    height: auto;
+  }
+  .news .news__wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  .news .news__wrapper .btn-main {
+    display: inline-block;
+  }
+  .subs-forms .subs-forms__container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .subs-forms .subs-forms__container .subs-forms__container__left img {
+    width: 100%;
+  }
+  .subs-forms .subs-forms__container .subs-forms__container__right .title-1 {
+    font-size: 2rem;
+  }
+  .section__general-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .app-card .app-card__wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 1rem;
+    margin: 3rem 0;
+    gap: 2rem;
+  }
+  .app-card .app-card__wrapper .app-card__right {
+    width: 100%;
+  }
+  .app-card .app-card__wrapper .app-card__right .btn-content {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  footer {
+    padding-top: 4rem;
+  }
+  footer .footer__main {
+    padding: 0 2rem;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  footer .copyright {
+    padding: 1rem 2rem;
+    text-align: left;
+  }
+  form p input[type="checkbox"] {
+    width: 25px;
+    height: 21px;
+    border: 0.1rem solid black;
+  }
+  form p input[type="checkbox"]::before {
+    top: 0;
+    left: 0;
+  }
+  form p input[type="checkbox"]:checked::before {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+  }
+  form p label {
+    font-size: 0.75rem;
+  }
+  section {
+    padding: 0 1.5rem;
+  }
+}
+/*# sourceMappingURL=phone__breakpoint.css.map */

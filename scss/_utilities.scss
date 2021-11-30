@@ -1,0 +1,93 @@
+@import "colors";
+.show {
+    opacity: 1 !important;
+    display: block !important;
+}
+
+.hide {
+    opacity: 0 !important;
+    display: none !important;
+}
+
+.sticky {
+    position: fixed !important;
+    top: 0 !important;
+    height: 6rem;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    .logo {
+        width: 6.25rem !important;
+    }
+    .show-nav {
+        margin-top: 15px;
+    }
+}
+
+.person-tag {
+    text-transform: uppercase;
+    color: $color-text-soft-grey;
+    margin-left: 1.1rem;
+    display: inline;
+    margin-right: 1rem;
+    position: relative;
+    font-size: 0.75rem;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        left: -15px;
+        top: 3px;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+    }
+}
+
+.person-tag-patient {
+    &::before {
+        background-color: $color-main-text;
+    }
+}
+
+.person-tag-doctor {
+    &::before {
+        background-color: $color-person-tag-doctor;
+    }
+}
+
+.person-tag-specialist {
+    &::before {
+        background-color: $color-skin;
+    }
+}
+
+.title-1 {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+}
+
+.title-4 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.title-6 {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.title-7 {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.5;
+    text-align: left;
+}

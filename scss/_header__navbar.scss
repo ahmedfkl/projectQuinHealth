@@ -1,0 +1,105 @@
+@import "colors";
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7.75rem;
+    top: 2.625rem;
+    position: fixed;
+    padding: 0.75rem 18rem;
+    width: 100%;
+    z-index: 100;
+    background-color: $color-white;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    &>a {
+        display: flex;
+        align-items: center;
+    }
+    .burger {
+        display: none;
+        cursor: pointer;
+        z-index: 99;
+        .line-1 {
+            height: 2px;
+            width: 25px;
+            background-color: $color-main-text;
+            margin-bottom: 5px;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+        }
+        .line-2 {
+            opacity: 1;
+            height: 2px;
+            width: 25px;
+            background-color: $color-main-text;
+            margin-bottom: 5px;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+        }
+        .line-3 {
+            height: 2px;
+            width: 25px;
+            background-color: $color-main-text;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+        }
+    }
+    a {
+        .logo {
+            width: 9.375rem;
+            transition: all 0.5s ease-in-out;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+        }
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        li {
+            position: relative;
+            .nav__dropdown__box {
+                background-color: $color-white;
+                position: absolute;
+                top: 25px;
+                left: 0;
+                width: 140%;
+                padding: 1rem 0 0.5rem 0;
+                display: none;
+                opacity: 0;
+                transition: all 1s ease-in-out;
+                -webkit-transition: all 1s ease-in-out;
+                -moz-transition: all 1s ease-in-out;
+                -ms-transition: all 1s ease-in-out;
+                -o-transition: all 1s ease-in-out;
+            }
+            i {
+                margin-left: .5rem;
+            }
+        }
+        .is-dropdown {
+            &:hover {
+                .nav__dropdown__box {
+                    display: block;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

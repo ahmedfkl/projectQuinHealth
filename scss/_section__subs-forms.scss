@@ -1,0 +1,33 @@
+@import "colors";
+@import "utilities";
+.subs-forms {
+    .subs-forms__container {
+        background-color: $color-secondary;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 2rem;
+        border-radius: 1.375rem;
+        -webkit-border-radius: 1.375rem;
+        -moz-border-radius: 1.375rem;
+        -ms-border-radius: 1.375rem;
+        -o-border-radius: 1.375rem;
+        .subs-forms__container__left {
+            img {
+                width: 65%;
+            }
+        }
+        .subs-forms__container__right {
+            .title-1 {
+                font-size: 2.25rem;
+                margin-bottom: 1rem;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                input {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}

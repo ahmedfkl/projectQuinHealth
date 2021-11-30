@@ -1,0 +1,12 @@
+@import "breakpoints";
+@media screen and (max-width: $phone) {
+    @import "utilities__responsive";
+    @import "header__responsive/header__responsive";
+    @import "sections__responsive/sections__responsive";
+    @import "app-card__responsive";
+    @import "footer__responsive";
+    @import "form__responsive";
+    section {
+        padding: 0 1.5rem;
+    }
+}

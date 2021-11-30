@@ -1,0 +1,10 @@
+.news {
+    height: auto;
+    .news__wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        .btn-main {
+            display: inline-block;
+        }
+    }
+}

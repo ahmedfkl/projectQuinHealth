@@ -1,0 +1,12 @@
+@import "colors";
+@import "utilities";
+.section__between__smoke {
+    height: 9rem;
+    display: block !important;
+    .desktop-smoke {
+        display: block;
+    }
+    .mobile-smoke {
+        display: none;
+    }
+}

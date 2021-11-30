@@ -1,0 +1,44 @@
+@import "colors";
+@import "utilities";
+.section__large__bg__number {
+    .section__large__bg__number__image {
+        width: 70%;
+        position: relative;
+        &::after {
+            counter-increment: section-number;
+            content: "0" counter(section-number);
+            position: absolute;
+            z-index: -1;
+            font-size: 8rem;
+            color: $color-secondary;
+            top: -3.5rem;
+            left: 0;
+            font-family: 'Mulish', sans-serif;
+            font-weight: 900;
+        }
+    }
+}
+
+.bg__number__for__big__image {
+    .section__large__bg__number__image {
+        &::after {
+            left: -5rem;
+        }
+    }
+}
+
+.bg__number__right {
+    .section__large__bg__number__image {
+        &::after {
+            left: 30rem;
+        }
+    }
+}
+
+.bg__number__left {
+    .section__large__bg__number__image {
+        &::after {
+            left: -10rem;
+        }
+    }
+}

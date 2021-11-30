@@ -1,0 +1,16 @@
+.app-card {
+    .app-card__wrapper {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        margin: 3rem 0;
+        gap: 2rem;
+        .app-card__right {
+            width: 100%;
+            .btn-content {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}

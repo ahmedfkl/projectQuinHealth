@@ -1,0 +1,11 @@
+.section__large__bg__number__image {
+    order: 1;
+    &::after {
+        left: -3rem !important;
+        font-size: 6rem !important;
+    }
+}
+
+.section__large__bg__number__content {
+    order: 2;
+}

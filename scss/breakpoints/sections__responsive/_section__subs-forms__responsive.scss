@@ -1,0 +1,17 @@
+.subs-forms {
+    .subs-forms__container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem 1rem 2rem 1rem;
+        .subs-forms__container__left {
+            img {
+                width: 100%;
+            }
+        }
+        .subs-forms__container__right {
+            .title-1 {
+                font-size: 2rem;
+            }
+        }
+    }
+}

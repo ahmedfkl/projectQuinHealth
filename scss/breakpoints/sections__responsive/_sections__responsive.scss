@@ -1,0 +1,10 @@
+@import "section__large__responsive";
+@import "section__small__responsive";
+@import "section__between__smoke__responsive";
+@import "section__large__bg__number__responsive";
+@import "section__small__right-image__responsive";
+@import "section__news__responsive";
+@import "section__subs-forms__responsive";
+.section__general-grid {
+    grid-template-columns: 1fr;
+}

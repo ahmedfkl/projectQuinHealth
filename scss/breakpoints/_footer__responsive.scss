@@ -1,0 +1,13 @@
+footer {
+    padding-top: 4rem;
+    .footer__main {
+        padding: 0 2rem;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    .copyright {
+        padding: 1rem 2rem;
+        text-align: left;
+    }
+}
