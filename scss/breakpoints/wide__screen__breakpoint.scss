@@ -1,0 +1,9 @@
+@import "breakpoints";
+@media screen and (max-width:$wide-high) {
+    @import "wide-screen/header-wide-high/header__wide__high";
+    @import "wide-screen/sections-wide-high/sections__wide__high";
+    @import "wide-screen/footer-wide-high/footer__wide__high";
+    section {
+        padding: 0 8rem;
+    }
+}

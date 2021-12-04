@@ -1,0 +1,27 @@
+@media screen and (max-width: 1500px) {
+  #header__top {
+    padding: 0.5rem 8rem;
+  }
+  #header__top .language__dropdown {
+    right: 8.75rem;
+  }
+  nav {
+    padding: 0.75rem 8rem;
+  }
+  .section__small__right-image .section__small__right-image__container .section__small__right-image__img img {
+    width: 40%;
+  }
+  .section__large__bg__number .section__large__bg__number__image::after {
+    left: -2rem;
+  }
+  footer .footer__main {
+    padding: 0 8rem;
+  }
+  footer .copyright {
+    padding: 1rem 8rem;
+  }
+  section {
+    padding: 0 8rem;
+  }
+}
+/*# sourceMappingURL=wide__screen__breakpoint.css.map */

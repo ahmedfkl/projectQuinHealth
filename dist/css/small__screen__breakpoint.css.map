@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AACA,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EGDpC,AACI,SADK,CACL,kBAAkB,CAAC;IACf,qBAAqB,EAAE,GAAG;IAC1B,GAAG,EAAE,IAAI;GACZ;ECJL,AAAA,KAAK,CAAC;IACF,MAAM,EAAE,IAAI;GAIf;EALD,AAEI,KAFC,CAED,cAAc,CAAC;IACX,qBAAqB,EAAE,cAAc;GACxC",
+    "sources": [
+        "../../scss/breakpoints/small__screen__breakpoint.scss",
+        "../../scss/breakpoints/_breakpoints.scss",
+        "../../scss/breakpoints/small-screen/sections-small-screen/_sections__small__screen.scss",
+        "../../scss/breakpoints/small-screen/sections-small-screen/_app-card__small__section.scss",
+        "../../scss/breakpoints/small-screen/sections-small-screen/_news__small__screen.scss"
+    ],
+    "names": [],
+    "file": "small__screen__breakpoint.css"
+}

@@ -1,0 +1,7 @@
+.section__large__bg__number {
+    .section__large__bg__number__image {
+        &::after {
+            left: -2rem;
+        }
+    }
+}

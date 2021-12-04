@@ -1,0 +1,17 @@
+{
+    "version": 3,
+    "mappings": "AACA,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EGDpC,AAAA,YAAY,CAAC;IACT,OAAO,EAAE,WAAW;GAIvB;EALD,AAEI,YAFQ,CAER,mBAAmB,CAAC;IAChB,KAAK,EAAE,OACX;GAAC;ECJL,AAAA,GAAG,CAAC;IACA,OAAO,EAAE,YAAY;GACxB;EEFD,AAGY,4BAHgB,CACxB,uCAAuC,CACnC,iCAAiC,CAC7B,GAAG,CAAC;IACA,KAAK,EAAE,GAAG;GACb;ECLb,AAEQ,2BAFmB,CACvB,kCAAkC,AAC7B,OAAO,CAAC;IACL,IAAI,EAAE,KAAK;GACd;ECJT,AACI,MADE,CACF,aAAa,CAAC;IACV,OAAO,EAAE,MAAM;GAClB;EAHL,AAII,MAJE,CAIF,UAAU,CAAC;IACP,OAAO,EAAE,SAAS;GACrB;ERDD,AAAA,OAAO,CAAC;IACJ,OAAO,EAAE,MAAM;GAClB",
+    "sources": [
+        "../../scss/breakpoints/wide__screen__breakpoint.scss",
+        "../../scss/breakpoints/_breakpoints.scss",
+        "../../scss/breakpoints/wide-screen/header-wide-high/_header__wide__high.scss",
+        "../../scss/breakpoints/wide-screen/header-wide-high/_header__top__wide__high.scss",
+        "../../scss/breakpoints/wide-screen/header-wide-high/_header__navbar__wide__high.scss",
+        "../../scss/breakpoints/wide-screen/sections-wide-high/_sections__wide__high.scss",
+        "../../scss/breakpoints/wide-screen/sections-wide-high/_section__small__right-image.scss",
+        "../../scss/breakpoints/wide-screen/sections-wide-high/_section__large__bg__number__wide__high.scss",
+        "../../scss/breakpoints/wide-screen/footer-wide-high/_footer__wide__high.scss"
+    ],
+    "names": [],
+    "file": "wide__screen__breakpoint.css"
+}

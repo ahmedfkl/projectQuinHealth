@@ -88,8 +88,8 @@
 }
 
 .title-4 {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.625rem;
+  font-weight: 700;
 }
 
 .title-6 {
@@ -498,8 +498,8 @@ nav ul .is-dropdown:hover .nav__dropdown__box {
 }
 
 .title-4 {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.625rem;
+  font-weight: 700;
 }
 
 .title-6 {
@@ -634,8 +634,8 @@ p {
 }
 
 .title-4 {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.625rem;
+  font-weight: 700;
 }
 
 .title-6 {
@@ -737,8 +737,8 @@ p {
 }
 
 .title-4 {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.625rem;
+  font-weight: 700;
 }
 
 .title-6 {
@@ -857,8 +857,8 @@ p {
 }
 
 .title-4 {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.625rem;
+  font-weight: 700;
 }
 
 .title-6 {
@@ -898,7 +898,7 @@ p {
 }
 
 .section__small__right-image .section__small__right-image__container .section__small__right-image__img img {
-  width: 25%;
+  width: 40%;
 }
 
 .show {
@@ -972,8 +972,8 @@ p {
 }
 
 .title-4 {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.625rem;
+  font-weight: 700;
 }
 
 .title-6 {
@@ -993,7 +993,6 @@ p {
 
 .news {
   margin: 6rem 0;
-  height: 35rem;
 }
 
 .news .news__wrapper {
@@ -1044,10 +1043,11 @@ p {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  gap: .5rem;
 }
 
 .news .news__wrapper .news__card .news__card__container a {
-  margin-top: auto;
+  margin-top: 1.5rem;
 }
 
 .news .news__wrapper .news__card .news__card__container a i {
@@ -1125,8 +1125,8 @@ p {
 }
 
 .title-4 {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.625rem;
+  font-weight: 700;
 }
 
 .title-6 {
@@ -1252,8 +1252,8 @@ p {
 }
 
 .title-4 {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.625rem;
+  font-weight: 700;
 }
 
 .title-6 {
@@ -1435,8 +1435,8 @@ form p input[type="checkbox"]:checked::before {
 }
 
 .title-4 {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.625rem;
+  font-weight: 700;
 }
 
 .title-6 {
@@ -1540,8 +1540,8 @@ p {
 }
 
 .title-4 {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.625rem;
+  font-weight: 700;
 }
 
 .title-6 {
@@ -1715,8 +1715,8 @@ form p input[type="checkbox"]:checked::before {
 }
 
 .title-4 {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.625rem;
+  font-weight: 700;
 }
 
 .title-6 {

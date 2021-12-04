@@ -1,0 +1,5 @@
+@import "breakpoints";
+@media screen and (max-width: $mid-screen) {
+    @import "mid-screen/header-mid-screen/header__mid__screen";
+    @import "mid-screen/footer-mid-screen/footer__mid__screen";
+}

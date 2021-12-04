@@ -1,0 +1,15 @@
+@media screen and (max-width: 1000px) {
+  .app-card .app-card__wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .news {
+    height: auto;
+  }
+  .news .news__wrapper {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*# sourceMappingURL=small__screen__breakpoint.css.map */

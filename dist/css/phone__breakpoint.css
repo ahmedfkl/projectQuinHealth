@@ -10,10 +10,10 @@
     font-size: 1.375rem;
   }
   .person-tag {
-    font-size: 1rem;
+    font-size: .75rem;
   }
   .person-tag::before {
-    top: 5px;
+    top: 3px;
   }
   .sticky {
     height: 4rem;
@@ -120,7 +120,7 @@
     margin-bottom: 0;
   }
   .section__large {
-    padding-top: 1rem;
+    padding-top: 4rem;
     position: relative;
   }
   .section__large img {
@@ -129,7 +129,7 @@
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    top: 10rem;
+    top: 13rem;
   }
   .section__large .section__large__content {
     -webkit-box-ordinal-group: 3;

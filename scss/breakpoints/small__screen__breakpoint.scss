@@ -1,0 +1,4 @@
+@import "breakpoints";
+@media screen and(max-width:$small-screen) {
+    @import "small-screen/sections-small-screen/sections__small__screen";
+}
